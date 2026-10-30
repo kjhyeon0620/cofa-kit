@@ -27,7 +27,8 @@
 
 ## 3. Git
 
-1. Task 하나를 끝내면 커밋하지 않은 상태로 [작업 요약](#6-보고-형식)을 보고한다.
+0. 첫 커밋은 키트와 과제 자료다: `chore: 과제 자료와 cofa-kit 작업 키트 추가 (github.com/kjhyeon0620/cofa-kit)`. 어디까지가 가져온 것이고 어디부터가 작업인지 로그에서 구분되게 한다.
+1. Task 하나를 끝내면 커밋하지 않은 상태로 [작업 요약](#6-보고-형식)을 보고한다. 승인 후 커밋하면 `docs/handoff.md`도 갱신한다.
 2. 승인을 받으면 `bash scripts/check.sh`를 통과시킨 뒤 이번 Task 범위의 파일만 stage하고 커밋한다.
 3. 커밋 메시지: Conventional Commits `type(scope): 한국어 요약` (`feat`, `fix`, `test`, `refactor`, `docs`, `chore`)
    - 예: `docs(spec): 문제 정의와 범위 확정`, `test(judge): 기준 변경일 전후 판정 테스트`, `feat(report): 일일 이상 리포트 생성`
