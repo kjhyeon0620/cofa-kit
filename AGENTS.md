@@ -30,7 +30,7 @@
 
 1. 이 키트를 새 저장소에 들였다면 키트와 제공 자료를 첫 커밋으로 분리한다 (`chore: 작업 자료와 sdd 키트 추가`). 가져온 것과 작업한 것이 로그에서 구분되게 한다.
 2. Task 하나를 끝내면 커밋하지 않은 상태로 [작업 요약](#6-보고-형식)을 보고한다.
-3. 승인을 받으면 `bash scripts/check.sh`를 통과시킨 뒤 이번 Task 범위의 파일만 stage하고 커밋한다. 커밋 후 `docs/handoff.md`를 갱신한다.
+3. 승인을 받으면 `docs/handoff.md`를 갱신하고 `bash scripts/check.sh`를 통과시킨 뒤, 이번 Task 범위의 파일과 handoff를 함께 stage해 커밋한다.
 4. 커밋 메시지: Conventional Commits `type(scope): 한국어 요약` (`feat`, `fix`, `test`, `refactor`, `docs`, `chore`)
    - 예: `docs(spec): 문제 정의와 범위 확정`, `test(judge): 기준 변경일 전후 판정 테스트`, `feat(report): 일일 이상 리포트 생성`
 - 버그는 실패하는 테스트를 먼저 커밋하고(`test: ... 재현`), 수정을 따로 커밋한다.
